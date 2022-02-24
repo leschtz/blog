@@ -266,7 +266,7 @@ todo_include_todos = False
 
 # Glob pattern that grabs all posts so you don't need to specify which posts are blog posts in each post
 # This pattern facilitates a folder structure such as posts/2020/my-awesome-post.rst
-blog_post_pattern = "posts/*/*"
+blog_post_pattern = ["posts/*/*.rst", "posts/*/*.md"]
 
 # post_auto_excerpt: Number of paragraphs (default is 1) that will be displayed as an excerpt from the post. Setting
 # this 0 will result in displaying no post excerpt in archive pages.
