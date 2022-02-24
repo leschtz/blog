@@ -6,7 +6,12 @@
 Welcome!
 ==========================================
 
-.. postlist:: 10
+This blog enables me to maintain a personal Knowledge Database, easily hosted via Github Pages.
+
+/posts
+-----------
+
+.. postlist:: 15
    :author: Lukas Schütz <leschtz>
    :date: %Y-%m-%d
    :format: {date} - {title}
