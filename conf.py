@@ -264,6 +264,7 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
+github_pages = "leschtz"
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -360,5 +361,7 @@ html_static_path = ["_static"]
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "Blogdoc"
+
+
 
 
