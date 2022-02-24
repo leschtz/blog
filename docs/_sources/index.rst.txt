@@ -3,17 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Lukas Schütz <leschtz>'s Blog!
+Welcome!
 ==========================================
 
-Hello World! Find more about me here: :doc:`about`
-
-
-Here is a list of most recent posts:
-
-.. postlist:: 5
+.. postlist:: 10
+   :author: Lukas Schütz <leschtz>
+   :date: %Y-%m-%d
+   :format: {date} - {title}
+   :list-style: none
    :excerpts:
-
 
 .. `toctree` directive, below, contains list of non-post `.rst` files.
    This is how they appear in Navigation sidebar. Note that directive
@@ -26,4 +24,5 @@ Here is a list of most recent posts:
    :hidden:
 
    about
+   blog
 

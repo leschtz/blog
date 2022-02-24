@@ -18,7 +18,7 @@ import ablog
 # blog_path = 'blog'
 
 # The "title" for the blog, used in active pages.  Default is ``'Blog'``.
-blog_title = "Blog Blog"
+blog_title = "/blog"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
@@ -207,7 +207,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "Blog"
+project = "/blog"
 copyright = "2022, Lukas Schütz <leschtz>"
 author = "Lukas Schütz <leschtz>"
 
@@ -264,7 +264,14 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-github_pages = "leschtz"
+# Glob pattern that grabs all posts so you don't need to specify which posts are blog posts in each post
+# This pattern facilitates a folder structure such as posts/2020/my-awesome-post.rst
+blog_post_pattern = "posts/*/*"
+
+# post_auto_excerpt: Number of paragraphs (default is 1) that will be displayed as an excerpt from the post. Setting
+# this 0 will result in displaying no post excerpt in archive pages.
+post_auto_excerpt = 3
+
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -276,7 +283,7 @@ html_theme = 'pydata_sphinx_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-#    'github_button': False,
+    "github_url": "https://github.com/leschtz/",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
