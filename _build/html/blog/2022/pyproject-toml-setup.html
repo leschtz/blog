@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>The pyproject.toml File &#8212; /blog  documentation</title>
+    
+    <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
+    
+    <link rel="stylesheet"
+      href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+    
+      
+  
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/pydata-sphinx-theme.css" />
+    
+    <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+<a class="navbar-brand" href="../../index.html">
+<p class="title">/blog</p>
+</a>
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about.html">
+  /about
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../blog.html">
+  /all-posts
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/leschtz/" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items">  
+<h2>
+   
+  26 Februar 2022 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span
+    >Author:</span
+  >
+   
+  <a href="../author/lukas-schutz-leschtz.html">Lukas Schütz <leschtz></a>  
+</li>
+    
+<li id="tags">
+  <span
+    >Tags: </span
+  >
+   
+  <a href="../tag/programming.html">programming</a>   
+  <a href="../tag/dev-environment.html">dev-environment</a>   
+  <a href="../tag/python.html">python</a>  
+</li>
+ 
+</ul>
+
+<h3>
+  <a href="../../blog.html">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="hello-world.html"
+      >24 Februar - Hello, World!</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../tag.html">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+   
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../tag/chitchat.html">chitchat</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../tag/dev-environment.html">dev-environment</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../tag/programming.html">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../tag/python.html">python</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../archive.html">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#difference-of-pyproject-toml-setup-py-and-setup-cfg">
+   Difference of
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pyproject.toml
+    </span>
+   </code>
+   ,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     setup.py
+    </span>
+   </code>
+   and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     setup.cfg
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#personal-notes">
+   Personal Notes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-pyproject-toml">
+   Example
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pyproject.toml
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#important-links">
+   Important Links
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="the-pyproject-toml-file">
+<h1>The pyproject.toml File<a class="headerlink" href="#the-pyproject-toml-file" title="Permalink to this headline">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Over the years, the <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> added a multitude of issues with the build system of python.
+<code class="docutils literal notranslate"><span class="pre">setuptools</span></code> tried to fix such issues, however it became dominant and any project not using it had it as dependency in the end, because any requirements may have used it.</p>
+</section>
+<section id="difference-of-pyproject-toml-setup-py-and-setup-cfg">
+<h2>Difference of <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> and <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code><a class="headerlink" href="#difference-of-pyproject-toml-setup-py-and-setup-cfg" title="Permalink to this headline">¶</a></h2>
+<p>To my understanding, the <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> file is a configuration file defined by the setuptools project. An example can be found at <a class="reference external" href="https://setuptools.pypa.io/en/latest/userguide/declarative_config.html">Setuptools-Configuration</a>. <a class="reference external" href="https://www.python.org/dev/peps/pep-0518/">PEP-518</a> aimed to remove this issue, by creating a defined file format, which could be used by any other packaging tool, like flutter or poetry. With regards to setuptools compatibility, in <a class="reference external" href="https://github.com/pypa/setuptools/issues/1688">Setuptools-Issue_Setup_cfg</a> was discussed how to change to the standardized approach.</p>
+<p><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> is similar to the non-officially standardized <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> file, trying to resolve several issues of the ini file format used. In the original PEP, reasoning is given, why the file defined by the setuptools is not suitable for packaging.</p>
+<p><code class="docutils literal notranslate"><span class="pre">setup.py</span></code> was still needed to enable editable installs. There have been lengthy discussion about this. <a class="reference external" href="https://www.python.org/dev/peps/pep-0660/">PEP-660</a> aims to change this for <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>. <a class="reference external" href="https://stackoverflow.com/a/69711730">SO_660</a> refers to some links about tool integration status.</p>
+</section>
+<section id="personal-notes">
+<h2>Personal Notes<a class="headerlink" href="#personal-notes" title="Permalink to this headline">¶</a></h2>
+<p>For me, it looks like I can purely rely on <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> in the future. Tools like the black code formatter already support it. Therefor most configuration can be stored in a single file and my repositories do not get filled up with configuration files anymore.</p>
+</section>
+<section id="example-pyproject-toml">
+<h2>Example <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code><a class="headerlink" href="#example-pyproject-toml" title="Permalink to this headline">¶</a></h2>
+<p>This example file is directly taken from <a class="reference external" href="https://www.python.org/dev/peps/pep-0621/">PEP-621</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="p">[</span><span class="n">project</span><span class="p">]</span>
+<span class="linenos"> 2</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;spam&quot;</span>
+<span class="linenos"> 3</span><span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;2020.0.0&quot;</span>
+<span class="linenos"> 4</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Lovely Spam! Wonderful Spam!&quot;</span>
+<span class="linenos"> 5</span><span class="n">readme</span> <span class="o">=</span> <span class="s2">&quot;README.rst&quot;</span>
+<span class="linenos"> 6</span><span class="n">requires</span><span class="o">-</span><span class="n">python</span> <span class="o">=</span> <span class="s2">&quot;&gt;=3.8&quot;</span>
+<span class="linenos"> 7</span><span class="n">license</span> <span class="o">=</span> <span class="p">{</span><span class="n">file</span> <span class="o">=</span> <span class="s2">&quot;LICENSE.txt&quot;</span><span class="p">}</span> <span class="c1"># {file = &quot;file_name&quot;} OR {text = &quot;license text&quot;}. This is mutual exclusive</span>
+<span class="linenos"> 8</span><span class="n">keywords</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;egg&quot;</span><span class="p">,</span> <span class="s2">&quot;bacon&quot;</span><span class="p">,</span> <span class="s2">&quot;sausage&quot;</span><span class="p">,</span> <span class="s2">&quot;tomatoes&quot;</span><span class="p">,</span> <span class="s2">&quot;Lobster Thermidor&quot;</span><span class="p">]</span>
+<span class="linenos"> 9</span><span class="n">authors</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos">10</span>  <span class="p">{</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;hi@pradyunsg.me&quot;</span><span class="p">},</span>
+<span class="linenos">11</span>  <span class="p">{</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Tzu-Ping Chung&quot;</span><span class="p">}</span>
+<span class="linenos">12</span><span class="p">]</span>
+<span class="linenos">13</span><span class="n">maintainers</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos">14</span>  <span class="p">{</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Brett Cannon&quot;</span><span class="p">,</span> <span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;brett@python.org&quot;</span><span class="p">}</span>
+<span class="linenos">15</span><span class="p">]</span>
+<span class="linenos">16</span><span class="n">classifiers</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos">17</span>  <span class="s2">&quot;Development Status :: 4 - Beta&quot;</span><span class="p">,</span>
+<span class="linenos">18</span>  <span class="s2">&quot;Programming Language :: Python&quot;</span>
+<span class="linenos">19</span><span class="p">]</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos">22</span>  <span class="s2">&quot;httpx&quot;</span><span class="p">,</span>
+<span class="linenos">23</span>  <span class="s2">&quot;gidgethub[httpx]&gt;4.0.0&quot;</span><span class="p">,</span>
+<span class="linenos">24</span>  <span class="s2">&quot;django&gt;2.1; os_name != &#39;nt&#39;&quot;</span><span class="p">,</span>
+<span class="linenos">25</span>  <span class="s2">&quot;django&gt;2.0; os_name == &#39;nt&#39;&quot;</span>
+<span class="linenos">26</span><span class="p">]</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="p">[</span><span class="n">project</span><span class="o">.</span><span class="n">optional</span><span class="o">-</span><span class="n">dependencies</span><span class="p">]</span>
+<span class="linenos">29</span><span class="n">test</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos">30</span>  <span class="s2">&quot;pytest &lt; 5.0.0&quot;</span><span class="p">,</span>
+<span class="linenos">31</span>  <span class="s2">&quot;pytest-cov[all]&quot;</span>
+<span class="linenos">32</span><span class="p">]</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="p">[</span><span class="n">project</span><span class="o">.</span><span class="n">urls</span><span class="p">]</span>
+<span class="linenos">35</span><span class="n">homepage</span> <span class="o">=</span> <span class="s2">&quot;example.com&quot;</span>
+<span class="linenos">36</span><span class="n">documentation</span> <span class="o">=</span> <span class="s2">&quot;readthedocs.org&quot;</span>
+<span class="linenos">37</span><span class="n">repository</span> <span class="o">=</span> <span class="s2">&quot;github.com&quot;</span>
+<span class="linenos">38</span><span class="n">changelog</span> <span class="o">=</span> <span class="s2">&quot;github.com/me/spam/blob/master/CHANGELOG.md&quot;</span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="p">[</span><span class="n">project</span><span class="o">.</span><span class="n">scripts</span><span class="p">]</span>
+<span class="linenos">41</span><span class="n">spam</span><span class="o">-</span><span class="n">cli</span> <span class="o">=</span> <span class="s2">&quot;spam:main_cli&quot;</span>
+<span class="linenos">42</span>
+<span class="linenos">43</span><span class="p">[</span><span class="n">project</span><span class="o">.</span><span class="n">gui</span><span class="o">-</span><span class="n">scripts</span><span class="p">]</span>
+<span class="linenos">44</span><span class="n">spam</span><span class="o">-</span><span class="n">gui</span> <span class="o">=</span> <span class="s2">&quot;spam:main_gui&quot;</span>
+<span class="linenos">45</span>
+<span class="linenos">46</span><span class="p">[</span><span class="n">project</span><span class="o">.</span><span class="n">entry</span><span class="o">-</span><span class="n">points</span><span class="o">.</span><span class="s2">&quot;spam.magical&quot;</span><span class="p">]</span>
+<span class="linenos">47</span><span class="n">tomatoes</span> <span class="o">=</span> <span class="s2">&quot;spam:main_tomatoes&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="important-links">
+<h2>Important Links<a class="headerlink" href="#important-links" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0517/">PEP-517</a> defines the Table name [build-system] and why it is needed.</p>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0518/">PEP-518</a> defines the <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> data format.</p>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0621/">PEP-621</a> defines the Table name [project] of <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>. Its purpose is to store project metadata in the file. Such metadata is already known from <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> keyword arguments to the function <code class="docutils literal notranslate"><span class="pre">setup.py</span></code></p>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0660/">PEP-660</a> defines editable installs for <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> based builds.</p>
+<p><a class="reference external" href="https://packaging.python.org/en/latest/specifications/core-metadata/#core-metadata-specifications">Packaging-Guide</a> elaborates on the core metadata.</p>
+</section>
+</section>
+
+<div class="section">
+    
+
+<div class="section">
+  <span style="float: left">
+     Previous:
+    
+    <a href="hello-world.html">
+       Hello, World!
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+    <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, Lukas Schütz &lt;leschtz&gt;.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

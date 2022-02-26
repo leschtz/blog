@@ -148,6 +148,12 @@
 <ul>
    
   <li>
+    <a href="../../2022/pyproject-toml-setup/"
+      >26 Februar - The pyproject.toml File</a
+    >
+  </li>
+  
+  <li>
     <a href="../../2022/hello-world/"
       >24 Februar - Hello, World!</a
     >
@@ -192,6 +198,18 @@
   <li class="ablog-cloud ablog-cloud-3">
     <a href="../../tag/chitchat/">chitchat</a>
   </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../tag/dev-environment/">dev-environment</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../tag/programming/">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../tag/python/">python</a>
+  </li>
    
 </ul>
 
@@ -201,7 +219,7 @@
 <ul>
    
   <li>
-    <a href="../../2022/">2022 (1)</a>
+    <a href="../../2022/">2022 (2)</a>
   </li>
    
 </ul>
@@ -242,6 +260,49 @@
      Posts by  Lukas Schütz <leschtz> 
   </h1>
    
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../2022/pyproject-toml-setup/"
+        >The pyproject.toml File</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          26 Februar 2022 
+      </li>
+       
+<li id="author">
+  <span
+    >Author:</span
+  >
+   
+  <a href="#">Lukas Schütz <leschtz></a>  
+</li>
+    
+<li id="tags">
+  <span
+    >Tags: </span
+  >
+   
+  <a href="../../tag/programming/">programming</a>   
+  <a href="../../tag/dev-environment/">dev-environment</a>   
+  <a href="../../tag/python/">python</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>Over the years, the <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> added a multitude of issues with the build system of python.
+<code class="docutils literal notranslate"><span class="pre">setuptools</span></code> tried to fix such issues, however it became dominant and any project not using it had it as dependency in the end, because any requirements may have used it.</p>
+<p>To my understanding, the <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> file is a configuration file defined by the setuptools project. An example can be found at <a class="reference external" href="https://setuptools.pypa.io/en/latest/userguide/declarative_config.html">Setuptools-Configuration</a>. <a class="reference external" href="https://www.python.org/dev/peps/pep-0518/">PEP-518</a> aimed to remove this issue, by creating a defined file format, which could be used by any other packaging tool, like flutter or poetry. With regards to setuptools compatibility, in <a class="reference external" href="https://github.com/pypa/setuptools/issues/1688">Setuptools-Issue_Setup_cfg</a> was discussed how to change to the standardized approach.</p>
+<p><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> is similar to the non-officially standardized <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> file, trying to resolve several issues of the ini file format used. In the original PEP, reasoning is given, why the file defined by the setuptools is not suitable for packaging.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../../2022/pyproject-toml-setup/"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+  
 
   <div class="section ablog-post">
     <h2 class="ablog-post-title">
